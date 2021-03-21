@@ -124,6 +124,11 @@ private struct URLSessionConfigurationProvider {
         let configuration = URLSessionConfiguration.default
         configuration.requestCachePolicy = NSURLRequest.CachePolicy.useProtocolCachePolicy
         //configuration.urlCache = URLCache.shared
+        
+        // API Key if needed goes here
+        //let basicAuthHeader = "fghgfjh734892361vghv3241"
+        //configuration.httpAdditionalHeaders = [basicAuthHeader: "X-Auth-Token"]
+
         return configuration
     }
 }
